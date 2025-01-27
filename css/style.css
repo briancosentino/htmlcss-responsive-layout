@@ -1,0 +1,121 @@
+:root{
+    --primary-light: #F6F5F3;
+    --primary-lighter: #fff;
+    --primary-dark: #000;
+    --accent: #FF9614;
+    --footer-bg: #7C69A4;
+    --primary-text: #4E3969;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif';
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--primary-light);
+}
+/* utilities */
+.d-flex{
+    display: flex;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+}
+[class^="col"]{
+    padding: 1.5rem;
+}
+
+.col
+{
+  width: auto;
+  flex-basis: auto;
+
+}
+
+.col-1
+{
+  width: calc(100% / 12 * 1);
+}
+
+.col-2
+{
+  width: calc(100% / 12 * 2);
+}
+
+.col-3
+{
+  width: calc(100% / 12 * 3);
+}
+
+.col-4
+{
+  width: calc(100% / 12 * 4);
+}
+
+.col-5
+{
+  width: calc(100% / 12 * 5);
+}
+
+.col-6
+{
+  width: 50%;
+}
+
+.col-7
+{
+  width: calc(100% / 12 * 7);
+}
+
+.col-8
+{
+  width: calc(100% / 12 * 8);
+}
+
+.col-9
+{
+  width: calc(100% / 12 * 9);
+}
+
+.col-10
+{
+  width: calc(100% / 12 * 10);
+}
+
+.col-11
+{
+  width: calc(100% / 12 * 11);
+}
+
+.col-12
+{
+  width: 100%;
+}
+
+/* end utilities */
+
+/* header */
+nav{
+    background-color: var(--primary-lighter);
+    color: var(--accent);
+    font-family: 'nerko one';
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: grey  1px 0 ;
+    text-align: center;
+}
+/* end header */
