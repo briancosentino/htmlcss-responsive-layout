@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-light: #F6F5F3;
     --primary-lighter: #fff;
     --primary-dark: #000;
@@ -6,166 +6,204 @@
     --footer-bg: #7C69A4;
     --primary-text: #4E3969;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-img{
+
+img {
     max-width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
+
+body {
     background-color: var(--primary-light);
     font-family: Montserrat, Helvetica Neue, sans-serif;
 }
+
 /* utilities */
-.d-flex{
+.j-sb {
+    justify-content: space-between;
+}
+
+.d-flex {
     display: flex;
 }
-.container{
+
+.container {
     width: 90%;
     margin: auto;
 }
-.row
-{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1.5rem;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
 }
-[class^="col"]{
+
+[class^="col"] {
     padding: 1.5rem;
 }
 
-.col
-{
-  width: auto;
-  flex-basis: auto;
+.col {
+    width: auto;
+    flex-basis: auto;
 
 }
 
-.col-1
-{
-  width: calc(100% / 12 * 1);
+.col-1 {
+    width: calc(100% / 12 * 1);
 }
 
-.col-2
-{
-  width: calc(100% / 12 * 2);
+.col-2 {
+    width: calc(100% / 12 * 2);
 }
 
-.col-3
-{
-  width: calc(100% / 12 * 3);
+.col-3 {
+    width: calc(100% / 12 * 3);
 }
 
-.col-4
-{
-  width: calc(100% / 12 * 4);
+.col-4 {
+    width: calc(100% / 12 * 4);
 }
 
-.col-5
-{
-  width: calc(100% / 12 * 5);
+.col-5 {
+    width: calc(100% / 12 * 5);
 }
 
-.col-6
-{
-  width: 50%;
+.col-6 {
+    width: 50%;
 }
 
-.col-7
-{
-  width: calc(100% / 12 * 7);
+.col-7 {
+    width: calc(100% / 12 * 7);
 }
 
-.col-8
-{
-  width: calc(100% / 12 * 8);
+.col-8 {
+    width: calc(100% / 12 * 8);
 }
 
-.col-9
-{
-  width: calc(100% / 12 * 9);
+.col-9 {
+    width: calc(100% / 12 * 9);
 }
 
-.col-10
-{
-  width: calc(100% / 12 * 10);
+.col-10 {
+    width: calc(100% / 12 * 10);
 }
 
-.col-11
-{
-  width: calc(100% / 12 * 11);
+.col-11 {
+    width: calc(100% / 12 * 11);
 }
 
-.col-12
-{
-  width: 100%;
+.col-12 {
+    width: 100%;
 }
-.d-none{
+
+.d-none {
     display: none;
 }
 
 /* end utilities */
 
 /* header */
-nav{
+nav {
     background-color: var(--primary-lighter);
     color: var(--accent);
     font-family: 'nerko one', "coursive";
     font-size: 2rem;
     text-transform: uppercase;
-    text-shadow: grey  1px 0 ;
+    text-shadow: grey 1px 0;
     text-align: center;
 }
+
 /* end header */
 /* main */
-.container{
-    h2{
+.container {
+    h2 {
         font-weight: 300;
         color: grey;
         font-size: .9rem;
         text-transform: uppercase;
         margin-top: 1rem;
     }
-    h3.recipe-title{
+
+    h3.recipe-title {
         color: var(--primary-text);
         font-size: 1.6rem;
         margin: .5rem 0;
     }
-    .recipe-video{
-        img{
+
+    .recipe-video {
+        img {
             display: block;
         }
     }
-    .recipe-card{
+
+    .recipe-card {
         padding: 1.5rem;
-        
+
     }
-    .recipe-summary{
+
+    .recipe-summary {
         background-color: var(--primary-lighter);
         padding: 2rem;
         border-radius: 0 0 .2rem .2rem;
-        box-shadow:  lightgrey 0 0 4px 0px;
-        .col-12{
+        box-shadow: lightgrey 0 0 4px 0px;
+
+        .col-12 {
             padding: 0 1.5rem;
         }
-        h4{
+
+        h4 {
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-        h5{
+
+        h5 {
             font-size: .9rem;
             font-weight: 300;
             margin-bottom: 1rem;
         }
     }
+
 }
+
+#social {
+    a {
+        padding: .6rem 1rem;
+        background-color: var(--primary-lighter);
+        border-radius: 2rem;
+        box-shadow: rgb(218, 218, 218) 0 2px 3px;
+    }
+
+    .fa-facebook {
+        color: blue;
+    }
+
+    .fa-twitter {
+        color: rgb(26, 138, 182);
+    }
+
+    .fa-instagram {
+        color: fuchsia;
+    }
+
+    .fa-pinterest {
+        color: rgb(220, 1, 1);
+    }
+
+    .fa-youtube {
+        color: red;
+    }
+}
+
 /* end main */
 
 
@@ -173,51 +211,92 @@ nav{
 
 
 /* Tablet 768px */
-@media screen and (min-width:768px){
-   nav{
-    text-align: left;
-    padding: 1rem;
-   }
-   .d-none{
-    display: inline;
-   }
-   .recipe-summary{
-    white-space: nowrap;
-    .col-12{
-        width: calc(100%/12*4);
+@media screen and (min-width:768px) {
+    nav {
+        text-align: left;
+        padding: 1rem;
     }
-   }
-}
-/* End Tablet breakpoint */
 
-/* Desktop 992px */
-@media screen and (min-width: 992px){
-    .container{
-        width: 70%;
+    .d-none {
+        display: inline;
     }
-    .recipe-summary{
+
+    .recipe-summary {
         white-space: nowrap;
-        .col-12{
-            width: 100%;
+
+        .col-12 {
+            width: calc(100%/12*4);
         }
     }
     
-   #recipe .recipe-video{
-    width: calc(100%/12*8.5);
-   } 
-   #recipe .recipe-summary{
-    width: calc(100%/12*3.5);
-    border-radius: 0 .2rem .2rem 0;
-    padding: 1rem;
-    h4{
-        font-size: 1rem;
+    #social .d-none {
+        display: none;
     }
-    h5{
-        font-size: .7rem;
+    
+    #social .row{
+        margin: 0 -0.5rem;
     }
-   } 
-}
-/* End Desktop breakpoint */
+
+    #social .col {
+        width: 20%;
+        padding: .5rem;
+
+        .social-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* End Tablet breakpoint */
+
+    /* Desktop 992px */
+    @media screen and (min-width: 992px) {
+        .container {
+            width: 70%;
+        }
+
+        .recipe-summary {
+            white-space: nowrap;
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        #recipe .recipe-video {
+            width: calc(100%/12*8.5);
+        }
+
+        #recipe .recipe-summary {
+            width: calc(100%/12*3.5);
+            border-radius: 0 .2rem .2rem 0;
+            padding: 1rem;
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            h5 {
+                font-size: .7rem;
+            }
+        }
+        #social .d-none {
+            display: inline-block;
+            font-size: .6rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            vertical-align: middle;
+            
+        }
+        a.social-btn {
+
+            font-size: .6rem;
+
+        }
+    }
+
+    /* End Desktop breakpoint */
 
 
-/* end media query */
+    /* end media query */
