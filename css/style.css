@@ -230,6 +230,33 @@ nav {
         line-height: 1.8rem;
         font-weight: 400;
     }
+
+}
+footer{
+    padding: 2rem 0;
+    background-color: var(--footer-bg);
+    color: var(--primary-lighter);
+    text-align: center;
+    font-size: .8rem;
+    strong{
+        line-height: .5rem;
+    }
+    .left div{
+        line-height: 3rem;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 80%;
+        margin: auto;
+        li{
+            list-style: none;
+            text-decoration: underline;
+            
+        }
+    }
 }
 
 /* end main */
@@ -344,6 +371,21 @@ nav {
 
             font-size: .6rem;
 
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding: 1rem 1rem;
+            .left div{
+                line-height: 2rem;
+            }
+            ul{
+                justify-content: space-between;
+                align-items: center;
+                max-width: 100%;
+            }
         }
     }
 
